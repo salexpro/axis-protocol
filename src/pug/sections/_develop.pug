@@ -1,0 +1,30 @@
+-
+  const develop = [{
+    icon: 'currs',
+    title: 'Multiple currencies'
+  }, {
+    icon: 'cloud',
+    title: 'Rich API & libraries'
+  }, {
+    icon: 'phone',
+    title: 'UI for developers'
+  }]
+
+section.develop.grid-container
+  .develop_card
+    .grid-x.grid-margin-x.large-up-2.develop_inner
+      .cell.develop_img
+        +icon('spinner', [369, 337])
+      .cell.develop_content
+        h2.develop_header
+          | Developed by Axis Labs
+        p.develop_lead
+          | Axis Protocol is an interoperable, multi-layered blockchain resolving the key issues hindering blockchain mass adoption. Axis Protocol sets the standard for different industries to implement blockchain technology
+        ul.develop_items
+          each item in develop
+            - const { icon, title } = item;
+            li.develop_item
+              .develop_item_img
+                +icon(icon, [80, 80])
+              h3.develop_item_title
+                = title

@@ -1,0 +1,23 @@
+mixin social
+  -
+    const social = [
+        {
+            icon: 'm',
+            link: '#'
+        },
+        {
+            icon: 'tw',
+            link: '#'
+        },
+        {
+            icon: 'in',
+            link: '#'
+        },
+    ]
+
+  ul.social&attributes(attributes)
+    each item in social
+      - const { attrs, link, icon } = item;
+      li&attributes(attrs)
+        a(href=link, target=link && !link.includes("#") ? "_blank" : false)
+          +icon(icon, [24, 24])

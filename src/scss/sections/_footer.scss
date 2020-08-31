@@ -1,3 +1,15 @@
-.footer{
-    margin-top: auto;
+.footer {
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  &_copyright {
+    color: $gray60;
+    margin: 0 40px 0 auto;
+  }
+  &_powered {
+    text-decoration: underline;
+    color: $gray80;
+  }
 }

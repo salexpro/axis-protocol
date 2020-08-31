@@ -1,34 +1,39 @@
 {
-  "name": "foundation-codekit-boilerplate",
-  "version": "1.0.0",
-  "description": "Quick start with Zurb Foundation in Codekit",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bugs": {
+    "url": "https://github.com/salexpro/foundation-boilerplate/issues"
   },
+  "dependencies": {
+    "foundation-sites": "^6.6.3",
+    "jquery": "^3.5.1",
+    "svg4everybody": "^2.1.9",
+    "what-input": "^5.2.10",
+    "zepto": "^1.2.0"
+  },
+  "optionalDependencies": {},
+  "name": "foundation-codekit-boilerplate",
+  "author": "salexpro",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/salexpro/foundation-boilerplate.git"
   },
-  "author": "salexpro",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/salexpro/foundation-boilerplate/issues"
-  },
-  "homepage": "https://github.com/salexpro/foundation-boilerplate#readme",
-  "dependencies": {
-    "foundation-sites": "^6.6.1",
-    "jquery": "^3.4.1",
-    "svg4everybody": "^2.1.9"
-  },
+  "description": "Quick start with Zurb Foundation in Codekit",
   "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@babel/plugin-transform-regenerator": "^7.8.3",
-    "@babel/polyfill": "^7.8.3",
-    "@babel/preset-env": "^7.8.4",
-    "babel-eslint": "^10.0.3",
-    "browserslist": "^4.8.6",
-    "eslint": "^6.8.0",
-    "eslint-plugin-jquery": "^1.5.1"
-  }
+    "@babel/core": "^7.11.4",
+    "@babel/plugin-transform-regenerator": "^7.10.4",
+    "@babel/polyfill": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "@prettier/plugin-pug": "^1.5.1",
+    "babel-eslint": "^10.1.0",
+    "browserslist": "^4.14.0",
+    "eslint": "^7.7.0",
+    "eslint-plugin-jquery": "^1.5.1",
+    "prettier": "^2.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "ISC",
+  "homepage": "https://github.com/salexpro/foundation-boilerplate#readme"
 }

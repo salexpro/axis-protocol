@@ -1,0 +1,14 @@
+.social {
+  list-style: none;
+  display: grid;
+  grid-auto-flow: column;
+  margin: 0;
+  grid-column-gap: 28px;
+  a {
+    color: $gray80;
+    &:hover,
+    &:focus {
+      color: $gray100;
+    }
+  }
+}

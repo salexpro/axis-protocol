@@ -1,0 +1,14 @@
+.hero {
+  margin: 184px 0 96px;
+  &_inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-column-gap: 40px;
+  }
+  &_content {
+    display: flex;
+    flex-direction: column;
+    margin-top: -12px;
+    color: $gray100;
+  }
+}

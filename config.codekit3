@@ -41,6 +41,14 @@
 		"oAP": "/build/.gitignore",
 		"oF": 1
 		},
+	"/.prettierignore": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/.prettierignore",
+		"oF": 0
+		},
 	"/babel.config.js": {
 		"bF": 4,
 		"ft": 64,
@@ -97,13 +105,13 @@
 		"sC": 3,
 		"tS": 1
 		},
-	"/node_modules/svg4everybody/dist/svg4everybody.js": {
+	"/node_modules/zepto/dist/zepto.js": {
 		"bF": 4,
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/build/node_modules/svg4everybody/dist/svg4everybody.min.js",
+		"oAP": "/build/node_modules/zepto/dist/zepto.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -159,13 +167,47 @@
 		"oAP": "/build/assets/favicon/.gitkeep",
 		"oF": 1
 		},
-	"/src/assets/fonts/.gitkeep": {
+	"/src/assets/fonts/Agenor-Light.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 1,
-		"oAP": "/build/assets/fonts/.gitkeep",
-		"oF": 1
+		"oA": 2,
+		"oAP": "/build/assets/fonts/Agenor-Light.woff",
+		"oF": 0
+		},
+	"/src/assets/fonts/Agenor-Light.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/fonts/Agenor-Light.woff2",
+		"oF": 0
+		},
+	"/src/assets/fonts/Agenor-Regular.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/fonts/Agenor-Regular.woff",
+		"oF": 0
+		},
+	"/src/assets/fonts/Agenor-Regular.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/fonts/Agenor-Regular.woff2",
+		"oF": 0
+		},
+	"/src/assets/img/hero.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 2,
+		"oAP": "/build/assets/img/hero.svg",
+		"oF": 1,
+		"opt": 0,
+		"plM": 65566970740735,
+		"prP": 0
 		},
 	"/src/assets/img/icons.svg": {
 		"ft": 2097152,
@@ -175,7 +217,17 @@
 		"oF": 0,
 		"opt": 1,
 		"plM": 69982180343807,
-		"prP": 1
+		"prP": 0
+		},
+	"/src/assets/img/logo.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 0,
+		"oAP": "/build/assets/img/logo.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 65566970740735,
+		"prP": 0
 		},
 	"/src/js/app.js": {
 		"bF": 4,
@@ -270,6 +322,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/pug/components/_social.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/_social.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/pages/index.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -277,6 +339,36 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/index.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_develop.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/_develop.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_ecosystem.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/_ecosystem.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_features.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/_features.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -297,6 +389,36 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_header.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_hero.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/_hero.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_join.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/_join.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_roadmap.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/_roadmap.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -365,6 +487,32 @@
 		"oS": 3,
 		"sct": 1
 		},
+	"/src/scss/components/_form.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_form.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 1
+		},
+	"/src/scss/components/_menu.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_menu.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 1
+		},
 	"/src/scss/components/_offcanvas.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -387,6 +535,58 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/build/scss/css/_popup.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 1
+		},
+	"/src/scss/components/_social.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_social.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 1
+		},
+	"/src/scss/sections/_develop.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_develop.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 1
+		},
+	"/src/scss/sections/_ecosystem.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_ecosystem.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 1
+		},
+	"/src/scss/sections/_features.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_features.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 1
@@ -416,6 +616,45 @@
 		"oF": 0,
 		"oS": 3,
 		"sct": 1
+		},
+	"/src/scss/sections/_hero.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_hero.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 1
+		},
+	"/src/scss/sections/_join.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_join.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 1
+		},
+	"/src/scss/sections/_roadmap.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_roadmap.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 1
 		}
 	},
 "hooks": [
@@ -436,7 +675,7 @@
 	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 0,
 	"autoBuildNewItems": 1,
-	"autoprefixerEnableIEGrid": 1,
+	"autoprefixerEnableIEGrid": 0,
 	"babel7PresetType": 0,
 	"babelAllowRCFiles": 0,
 	"babelAuxiliaryCommentAfter": "",
@@ -670,7 +909,7 @@
 	"bowerTargetDependencyListType": 1,
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
-	"browserslistString": ">0.2%, last 2 versions, Firefox ESR, not dead, IE >= 9",
+	"browserslistString": ">0.2%, last 2 versions, Firefox ESR, not dead",
 	"buildFolderActive": 1,
 	"buildFolderName": "build",
 	"cleanBuild": 1,
@@ -2458,7 +2697,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"pluginMask": 69982197121023
+		"pluginMask": 65566970740735
 		},
 	"languageDefaultsTS": {
 		"autoOutputAction": 0,
@@ -2671,7 +2910,7 @@
 			"flagValue": 32000
 			},
 		"module": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"negate_iife": {

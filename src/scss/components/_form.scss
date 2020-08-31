@@ -1,0 +1,22 @@
+.form {
+  position: relative;
+  padding: 16px;
+  background: $gray10;
+  box-shadow: inset 0px 1px 3px rgba(2, 2, 2, 0.04),
+    inset 0px 3px 8px rgba($black, 0.06), inset 0px 6px 20px rgba($black, 0.04);
+  border-radius: 20px;
+  display: grid;
+  grid-column-gap: 16px;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  margin-top: auto;
+  input {
+    letter-spacing: -0.01em;
+    border: 0;
+    background: none;
+    &:focus {
+      border: 0;
+      background: none;
+    }
+  }
+}

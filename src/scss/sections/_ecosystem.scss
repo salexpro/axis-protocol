@@ -1,0 +1,9 @@
+.ecosystem {
+  margin-top: -9px;
+  color: $gray100;
+  margin-bottom: 96px;
+  &_content {
+    display: flex;
+    flex-direction: column;
+  }
+}
