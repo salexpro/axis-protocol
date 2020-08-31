@@ -3,6 +3,10 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 // Styled scrollbar
 ::-webkit-scrollbar {
   width: 5px;

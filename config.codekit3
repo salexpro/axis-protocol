@@ -8,7 +8,7 @@
 		},
 	{
 		"name": "New \"Run Script\" Step",
-		"scriptSourceString": "rm -rf docs/\ncp -rf build/ docs/\necho \"\\n\" >> docs/js/app.min.js\ncat docs/js/lib/fastnav.min.js >> docs/js/app.min.js\nrm -f build.zip\nzip -r build.zip build/ -x 'build/robots.txt' 'build/CNAME' '*.map' '*/\\.*'",
+		"scriptSourceString": "rm -f build.zip\nzip -r build.zip docs/ -x 'docs/robots.txt' 'docs/CNAME' '*.map' '*/\\.*'",
 		"scriptType": 1,
 		"scriptUUIDString": "6366FA1E-B734-4D93-BE1B-0AE5E5857F91",
 		"stepType": 2,
@@ -22,7 +22,7 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/.browserslistrc",
+		"oAP": "/docs/.browserslistrc",
 		"oF": 1
 		},
 	"/.eslintrc": {
@@ -30,7 +30,7 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/.eslintrc",
+		"oAP": "/docs/.eslintrc",
 		"oF": 1
 		},
 	"/.gitignore": {
@@ -38,7 +38,7 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/.gitignore",
+		"oAP": "/docs/.gitignore",
 		"oF": 1
 		},
 	"/.prettierignore": {
@@ -46,7 +46,7 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 2,
-		"oAP": "/build/.prettierignore",
+		"oAP": "/docs/.prettierignore",
 		"oF": 0
 		},
 	"/babel.config.js": {
@@ -55,7 +55,7 @@
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/build/babel.config.min.js",
+		"oAP": "/docs/babel.config.min.js",
 		"oF": 1,
 		"sC": 3,
 		"tS": 1
@@ -63,7 +63,7 @@
 	"/build": {
 		"ft": 65536,
 		"oA": 1,
-		"oAP": "/build/build",
+		"oAP": "/docs/build",
 		"oF": 0
 		},
 	"/build.zip": {
@@ -71,7 +71,7 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/build.zip",
+		"oAP": "/docs/build.zip",
 		"oF": 1
 		},
 	"/CNAME": {
@@ -79,19 +79,19 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 2,
-		"oAP": "/build/CNAME",
+		"oAP": "/docs/CNAME",
 		"oF": 0
 		},
 	"/docs": {
 		"ft": 65536,
 		"oA": 1,
-		"oAP": "/build/docs",
+		"oAP": "/docs/docs",
 		"oF": 0
 		},
 	"/node_modules": {
 		"ft": 65536,
 		"oA": 1,
-		"oAP": "/build/node_modules",
+		"oAP": "/docs/node_modules",
 		"oF": 0
 		},
 	"/node_modules/jquery/dist/jquery.js": {
@@ -105,21 +105,10 @@
 		"sC": 3,
 		"tS": 1
 		},
-	"/node_modules/zepto/dist/zepto.js": {
-		"bF": 4,
-		"ft": 64,
-		"ma": 1,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/build/node_modules/zepto/dist/zepto.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 1
-		},
 	"/package-lock.json": {
 		"ft": 524288,
 		"oA": 1,
-		"oAP": "/build/package-lock.json",
+		"oAP": "/docs/package-lock.json",
 		"oF": 1,
 		"oO": 0,
 		"oS": 0
@@ -127,7 +116,7 @@
 	"/package.json": {
 		"ft": 524288,
 		"oA": 1,
-		"oAP": "/build/package.json",
+		"oAP": "/docs/package.json",
 		"oF": 1,
 		"oO": 0,
 		"oS": 0
@@ -142,7 +131,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/README.html",
+		"oAP": "/docs/README.html",
 		"oF": 1,
 		"oFM": 0,
 		"oS": 0,
@@ -156,7 +145,7 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 2,
-		"oAP": "/build/robots.txt",
+		"oAP": "/docs/robots.txt",
 		"oF": 0
 		},
 	"/src/assets/favicon/.gitkeep": {
@@ -164,7 +153,7 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/assets/favicon/.gitkeep",
+		"oAP": "/docs/assets/favicon/.gitkeep",
 		"oF": 1
 		},
 	"/src/assets/fonts/Agenor-Light.woff": {
@@ -172,7 +161,7 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 2,
-		"oAP": "/build/assets/fonts/Agenor-Light.woff",
+		"oAP": "/docs/assets/fonts/Agenor-Light.woff",
 		"oF": 0
 		},
 	"/src/assets/fonts/Agenor-Light.woff2": {
@@ -180,7 +169,7 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 2,
-		"oAP": "/build/assets/fonts/Agenor-Light.woff2",
+		"oAP": "/docs/assets/fonts/Agenor-Light.woff2",
 		"oF": 0
 		},
 	"/src/assets/fonts/Agenor-Regular.woff": {
@@ -188,7 +177,7 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 2,
-		"oAP": "/build/assets/fonts/Agenor-Regular.woff",
+		"oAP": "/docs/assets/fonts/Agenor-Regular.woff",
 		"oF": 0
 		},
 	"/src/assets/fonts/Agenor-Regular.woff2": {
@@ -196,14 +185,14 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 2,
-		"oAP": "/build/assets/fonts/Agenor-Regular.woff2",
+		"oAP": "/docs/assets/fonts/Agenor-Regular.woff2",
 		"oF": 0
 		},
 	"/src/assets/img/hero.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/img/hero.svg",
+		"oAP": "/docs/assets/img/hero.svg",
 		"oF": 1,
 		"opt": 0,
 		"plM": 65566970740735,
@@ -213,7 +202,7 @@
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 0,
-		"oAP": "/build/assets/img/icons.svg",
+		"oAP": "/docs/assets/img/icons.svg",
 		"oF": 0,
 		"opt": 1,
 		"plM": 69982180343807,
@@ -223,7 +212,7 @@
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 0,
-		"oAP": "/build/assets/img/logo.svg",
+		"oAP": "/docs/assets/img/logo.svg",
 		"oF": 0,
 		"opt": 1,
 		"plM": 65566970740735,
@@ -235,18 +224,7 @@
 		"ma": 1,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/build/js/app.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 1
-		},
-	"/src/js/lib/fastnav.js": {
-		"bF": 4,
-		"ft": 64,
-		"ma": 1,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/build/js/lib/fastnav.min.js",
+		"oAP": "/docs/js/app.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -257,7 +235,7 @@
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/build/js/lib/foundation-explicit-pieces.min.js",
+		"oAP": "/docs/js/lib/foundation-explicit-pieces.min.js",
 		"oF": 1,
 		"sC": 3,
 		"tS": 1
@@ -268,7 +246,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_layout.html",
+		"oAP": "/docs/_layout.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -278,7 +256,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_head.html",
+		"oAP": "/docs/_head.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -288,7 +266,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_icons.html",
+		"oAP": "/docs/_icons.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -298,7 +276,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_menu.html",
+		"oAP": "/docs/_menu.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -308,7 +286,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_offcanvas.html",
+		"oAP": "/docs/_offcanvas.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -318,7 +296,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_popup.html",
+		"oAP": "/docs/_popup.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -328,7 +306,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_social.html",
+		"oAP": "/docs/_social.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -338,7 +316,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/index.html",
+		"oAP": "/docs/index.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -348,7 +326,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_develop.html",
+		"oAP": "/docs/_develop.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -358,7 +336,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_ecosystem.html",
+		"oAP": "/docs/_ecosystem.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -368,7 +346,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_features.html",
+		"oAP": "/docs/_features.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -378,7 +356,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_footer.html",
+		"oAP": "/docs/_footer.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -388,7 +366,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_header.html",
+		"oAP": "/docs/_header.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -398,7 +376,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_hero.html",
+		"oAP": "/docs/_hero.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -408,7 +386,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_join.html",
+		"oAP": "/docs/_join.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -418,7 +396,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_roadmap.html",
+		"oAP": "/docs/_roadmap.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -430,7 +408,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/css/_settings.css",
+		"oAP": "/docs/css/_settings.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 1
@@ -443,7 +421,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "/build/css/app.css",
+		"oAP": "/docs/css/app.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 1
@@ -456,7 +434,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/scss/css/_base.css",
+		"oAP": "/docs/scss/css/_base.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 1
@@ -469,7 +447,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/scss/css/_button.css",
+		"oAP": "/docs/scss/css/_button.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 1
@@ -482,7 +460,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/scss/css/_fonts.css",
+		"oAP": "/docs/scss/css/_fonts.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 1
@@ -495,7 +473,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/scss/css/_form.css",
+		"oAP": "/docs/scss/css/_form.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 1
@@ -508,7 +486,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/scss/css/_menu.css",
+		"oAP": "/docs/scss/css/_menu.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 1
@@ -521,7 +499,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/scss/css/_offcanvas.css",
+		"oAP": "/docs/scss/css/_offcanvas.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 1
@@ -534,7 +512,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/scss/css/_popup.css",
+		"oAP": "/docs/scss/css/_popup.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 1
@@ -547,7 +525,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/scss/css/_social.css",
+		"oAP": "/docs/scss/css/_social.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 1
@@ -560,7 +538,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/scss/css/_develop.css",
+		"oAP": "/docs/scss/css/_develop.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 1
@@ -573,7 +551,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/scss/css/_ecosystem.css",
+		"oAP": "/docs/scss/css/_ecosystem.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 1
@@ -586,7 +564,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/scss/css/_features.css",
+		"oAP": "/docs/scss/css/_features.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 1
@@ -599,7 +577,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/scss/css/_footer.css",
+		"oAP": "/docs/scss/css/_footer.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 1
@@ -612,7 +590,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/scss/css/_header.css",
+		"oAP": "/docs/scss/css/_header.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 1
@@ -625,7 +603,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/scss/css/_hero.css",
+		"oAP": "/docs/scss/css/_hero.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 1
@@ -638,7 +616,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/scss/css/_join.css",
+		"oAP": "/docs/scss/css/_join.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 1
@@ -651,7 +629,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/scss/css/_roadmap.css",
+		"oAP": "/docs/scss/css/_roadmap.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 1
@@ -667,7 +645,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-doge",
 	"iconImageWasSetByUser": 1,
-	"lastBuiltDate": 583538925.98218703
+	"lastBuiltDate": 620528875.14283705
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -911,7 +889,7 @@
 	"browserRefreshDelay": 0,
 	"browserslistString": ">0.2%, last 2 versions, Firefox ESR, not dead",
 	"buildFolderActive": 1,
-	"buildFolderName": "build",
+	"buildFolderName": "docs",
 	"cleanBuild": 1,
 	"coffeeLintFlags2": {
 		"arrow_spacing": {
@@ -3032,7 +3010,7 @@
 		},
 	"uglifyMangleNames": 1,
 	"uglifyReservedNamesString": "$",
-	"websiteRelativeRoot": "/build"
+	"websiteRelativeRoot": "/docs"
 	},
 "settingsFileVersion": "3"
 }
