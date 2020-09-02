@@ -1,18 +1,22 @@
 -
   const features = [
     {
+      icon: 'interoperability',
       title: 'Interoperability',
       descr: 'Support integrations from all major blockchains like Bitcoin and Ethereum. By doing this, we open gates for lots of secure finance solutions in our Dapps.'
     },
     {
+      icon: 'economy',
       title: 'Shared Economy model',
       descr: 'We will share the part of the transaction fee with the Dapp owners as a reward. They can now focus on the usability and security of the our app.'
     },
     {
+      icon: 'plugins',
       title: 'Blockchain Plugins',
       descr: 'We provide the modules and plugins for major programming languages and maintain an active community for troubleshooting and discussions.'
     },
     {
+      icon: 'app',
       title: 'marketplace mobile app',
       descr: 'The users can purchase listed goods and services using our native coin. The marketplace with peer to peer transactions, reducing cost of any centralized authority.'
     }
@@ -21,14 +25,10 @@
 section#features.features.grid-container
   ul.features_items
     each item, i in features
-      - const { title, descr } = item;
+      - const { icon, title, descr } = item;
       li.features_item
         .features_item_icon
-          img(
-            srcset=`https://picsum.photos/256?${i} 2x, https://picsum.photos/128?${i} 1x`,
-            src=`https://picsum.photos/128?${i}`,
-            alt=title
-          )
+          +icon(icon, [128, 128])
         h3.features_item_title
           = title
         p.features_item_descr

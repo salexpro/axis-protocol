@@ -4,6 +4,7 @@
   },
   "dependencies": {
     "foundation-sites": "^6.6.3",
+    "gsap": "^3.5.1",
     "jquery": "^3.5.1",
     "svg4everybody": "^2.1.9",
     "what-input": "^5.2.10",

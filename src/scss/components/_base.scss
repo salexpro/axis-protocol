@@ -71,3 +71,12 @@ h3,
   font-weight: 400;
   letter-spacing: 0.1em;
 }
+
+.lead {
+  @include breakpoint(small down) {
+    font-size: 16px;
+    br {
+      display: none;
+    }
+  }
+}

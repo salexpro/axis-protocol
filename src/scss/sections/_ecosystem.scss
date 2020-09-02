@@ -1,9 +1,28 @@
 .ecosystem {
-  margin-top: -9px;
   color: $gray100;
   margin-bottom: 96px;
+  @include breakpoint(small down) {
+    margin-bottom: 64px;
+  }
+  &_inner {
+    align-items: center;
+  }
+  &_img {
+    @include breakpoint(medium down) {
+      max-width: 688px;
+      margin-bottom: 54px;
+    }
+    @include breakpoint(small down) {
+      margin-bottom: 36px;
+    }
+  }
   &_content {
     display: flex;
     flex-direction: column;
+    align-self: stretch;
+    margin-top: -9px;
+    @include breakpoint(medium down) {
+      margin-top: 0;
+    }
   }
 }

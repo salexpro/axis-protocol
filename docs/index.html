@@ -14,10 +14,21 @@
     <meta property="og:title" content="Protocol by Axis">
     <meta property="og:description" content="The next generation smart contract platform">
     <meta property="og:url" content="https://axis-protocol.min.studio">
-    <meta property="og:image" content="https://axis-protocol.min.studio/assets/favicon/apple-touch-icon.png">
+    <meta property="og:image" content="https://axis-protocol.min.studio/assets/img/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta name="twitter:title" content="Protocol by Axis">
     <meta name="twitter:description" content="The next generation smart contract platform">
-    <link rel="stylesheet" href="./css/app.css?ckcachebust=29971ba0f8b5b0615f44cfe1ace8f49a">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://axis-protocol.min.studio/assets/img/og-image.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png?ckcachebust=bd587af60bb5fb08e85e7777bce4aadf">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png?ckcachebust=dbce407205cde3eeace1d086a4dad391">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png?ckcachebust=7053e1b6b100ad41ad36c655b8378821">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest?ckcachebust=d6f576a2ee334260859bcc8c3b6446fe">
+    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg?ckcachebust=e02bd71b2ef7d16a2b0ef119c736efd9" color="#1191ff">
+    <meta name="msapplication-TileColor" content="#1191ff">
+    <meta name="theme-color" content="#1191ff">
+    <link rel="stylesheet" href="./css/app.css?ckcachebust=86711e5bbd444376630117b5c47eb9f0">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
   </head>
   <body>
@@ -25,12 +36,33 @@
       <header class="header">
         <div class="grid-container header_inner">
           <div class="header_logo"><img src="./assets/img/logo.svg" alt="Protocol by Axis"></div>
-          <ul class="menu">
+          <ul class="menu menu--header">
             <li><a href="#overview">Overview</a></li>
             <li><a href="#features">Features</a></li>
             <li><a href="#roadmap">Roadmap</a></li>
           </ul>
           <div class="header_actions"><a class="button clear" href="#">Early access</a></div>
+          <ul class="social social--header">
+            <li><a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+                  <use fill="currentColor" xlink:href="./assets/img/icons.svg#m"></use>
+                </svg></a></li>
+            <li><a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+                  <use fill="currentColor" xlink:href="./assets/img/icons.svg#tw"></use>
+                </svg></a></li>
+            <li><a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+                  <use fill="currentColor" xlink:href="./assets/img/icons.svg#in"></use>
+                </svg></a></li>
+          </ul>
+          <button class="header_hamb">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <rect class="header_hamb_line header_hamb_line-middle" x="4" y="16" width="28" height="3" rx="1.5"></rect>
+              <rect class="header_hamb_line header_hamb_line-top" x="10" y="8" width="22" height="3" rx="1.5"></rect>
+              <rect class="header_hamb_line header_hamb_line-bottom" x="12" y="24" width="20" height="3" rx="1.5"></rect>
+            </svg>
+          </button>
         </div>
       </header>
       <section class="hero">
@@ -50,13 +82,13 @@
       </section>
       <section class="develop grid-container" id="overview">
         <div class="develop_card">
-          <div class="grid-x grid-margin-x large-up-2 develop_inner">
-            <div class="cell develop_img">
+          <div class="grid-x grid-margin-x develop_inner">
+            <div class="cell xlarge-6 large-5 develop_img">
               <svg xmlns="http://www.w3.org/2000/svg" width="369" height="337" viewbox="0 0 369 337">
                 <use fill="currentColor" xlink:href="./assets/img/icons.svg#spinner"></use>
               </svg>
             </div>
-            <div class="cell develop_content">
+            <div class="cell xlarge-6 large-7 develop_content">
               <h2 class="develop_header">Developed by Axis Labs</h2>
               <p class="develop_lead">Axis Protocol is an interoperable, multi-layered blockchain resolving the key issues hindering blockchain mass adoption. Axis Protocol sets the standard for different industries to implement blockchain technology</p>
               <ul class="develop_items">
@@ -95,28 +127,44 @@
       <section class="features grid-container" id="features">
         <ul class="features_items">
           <li class="features_item">
-            <div class="features_item_icon"><img srcset="https://picsum.photos/256?0 2x, https://picsum.photos/128?0 1x" src="https://picsum.photos/128?0" alt="Interoperability"></div>
+            <div class="features_item_icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewbox="0 0 128 128">
+                <use fill="currentColor" xlink:href="./assets/img/icons.svg#interoperability"></use>
+              </svg>
+            </div>
             <h3 class="features_item_title">Interoperability
             </h3>
             <p class="features_item_descr">Support integrations from all major blockchains like Bitcoin and Ethereum. By doing this, we open gates for lots of secure finance solutions in our Dapps.
             </p>
           </li>
           <li class="features_item">
-            <div class="features_item_icon"><img srcset="https://picsum.photos/256?1 2x, https://picsum.photos/128?1 1x" src="https://picsum.photos/128?1" alt="Shared Economy model"></div>
+            <div class="features_item_icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewbox="0 0 128 128">
+                <use fill="currentColor" xlink:href="./assets/img/icons.svg#economy"></use>
+              </svg>
+            </div>
             <h3 class="features_item_title">Shared Economy model
             </h3>
             <p class="features_item_descr">We will share the part of the transaction fee with the Dapp owners as a reward. They can now focus on the usability and security of the our app.
             </p>
           </li>
           <li class="features_item">
-            <div class="features_item_icon"><img srcset="https://picsum.photos/256?2 2x, https://picsum.photos/128?2 1x" src="https://picsum.photos/128?2" alt="Blockchain Plugins"></div>
+            <div class="features_item_icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewbox="0 0 128 128">
+                <use fill="currentColor" xlink:href="./assets/img/icons.svg#plugins"></use>
+              </svg>
+            </div>
             <h3 class="features_item_title">Blockchain Plugins
             </h3>
             <p class="features_item_descr">We provide the modules and plugins for major programming languages and maintain an active community for troubleshooting and discussions.
             </p>
           </li>
           <li class="features_item">
-            <div class="features_item_icon"><img srcset="https://picsum.photos/256?3 2x, https://picsum.photos/128?3 1x" src="https://picsum.photos/128?3" alt="marketplace mobile app"></div>
+            <div class="features_item_icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewbox="0 0 128 128">
+                <use fill="currentColor" xlink:href="./assets/img/icons.svg#app"></use>
+              </svg>
+            </div>
             <h3 class="features_item_title">marketplace mobile app
             </h3>
             <p class="features_item_descr">The users can purchase listed goods and services using our native coin. The marketplace with peer to peer transactions, reducing cost of any centralized authority.
@@ -125,8 +173,8 @@
         </ul>
       </section>
       <section class="grid-container ecosystem">
-        <div class="grid-x grid-margin-x large-up-2">
-          <div class="cell"><img srcset="https://picsum.photos/1240/554 2x, https://picsum.photos/620/277 1x" src="https://picsum.photos/620/277" alt="AXIS ECOSYSTEM"></div>
+        <div class="grid-x grid-margin-x large-up-2 ecosystem_inner">
+          <div class="cell ecosystem_img"><img src="./assets/img/ecosystem.svg" alt="AXIS ECOSYSTEM"></div>
           <div class="cell ecosystem_content">
             <h2>AXIS ECOSYSTEM</h2>
             <p class="lead">Axis Protocol is set to re-establish industrial standards for blockchain adoption. Creating an interconnected blockchain ecosystem across from different industries is our main goal.</p>
@@ -134,14 +182,9 @@
           </div>
         </div>
       </section>
-      <section class="roadmap" id="roadmap">
-        <div class="grid-container">
-          <h2>Roadmap</h2>
-        </div>
-      </section>
       <section class="grid-container join">
-        <div class="grid-x grid-margin-x large-up-2">
-          <div class="cell join_content">
+        <div class="grid-x grid-margin-x join_inner">
+          <div class="cell xlarge-6 large-7 join_content">
             <h2 class="h1">Join for<br>
               Early Access
             </h2>
@@ -151,7 +194,7 @@
               <button class="button">Request access</button>
             </form>
           </div>
-          <div class="cell"><img srcset="https://picsum.photos/1240/720 2x, https://picsum.photos/620/360 1x" src="https://picsum.photos/620/360" alt="Join"></div>
+          <div class="cell xlarge-6 large-5"><img src="./assets/img/join.svg" alt="Join"></div>
         </div>
       </section>
       <footer class="footer grid-container">
@@ -176,6 +219,6 @@
         <div class="footer_copyright">© 2020 Axis. All right reserved</div><a class="footer_powered" href="https://min.studio" target="_blank">Design by Minimal</a>
       </footer>
     </main>
-    <script src="./js/app.min.js?ckcachebust=056b0eeee7815d39384bbd173277432c"></script>
+    <script src="./js/app.min.js?ckcachebust=01266660f5a9b12eabe7c7941f926f62"></script>
   </body>
 </html>

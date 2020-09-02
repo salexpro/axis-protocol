@@ -1,14 +1,64 @@
 .hero {
   margin: 184px 0 96px;
+  @include breakpoint(medium down) {
+    margin-top: -300px;
+  }
+  @include breakpoint(small down) {
+    margin-top: -74px;
+    margin-bottom: 64px;
+  }
   &_inner {
     display: grid;
     grid-template-columns: 1fr auto;
     grid-column-gap: 40px;
+    align-items: center;
+    grid-template-areas: 'content img';
+    @include breakpoint(medium down) {
+      grid-template-columns: auto;
+      grid-template-areas:
+        'img'
+        'content';
+      grid-row-gap: 77px;
+      &::before {
+        content: '';
+        top: 0;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 180px;
+        background: linear-gradient(
+          180deg,
+          $white 12.5%,
+          rgba($white, 0.9) 49.48%,
+          rgba($white, 0.6) 84.37%,
+          rgba($white, 0) 100%
+        );
+      }
+    }
+    @include breakpoint(small down) {
+      grid-row-gap: 28px;
+    }
   }
   &_content {
     display: flex;
     flex-direction: column;
     margin-top: -12px;
     color: $gray100;
+    align-self: stretch;
+    grid-area: content;
+    @include breakpoint(medium down) {
+      margin: 0;
+    }
+  }
+  &_image {
+    grid-area: img;
+    @include breakpoint(medium down) {
+      justify-self: center;
+      width: 100%;
+      max-width: 688px;
+      img {
+        width: 100%;
+      }
+    }
   }
 }

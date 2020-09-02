@@ -4,6 +4,16 @@
   grid-auto-flow: column;
   margin: 0;
   grid-column-gap: 28px;
+  grid-area: social;
+  justify-self: start;
+  &--header {
+    @include breakpoint(large) {
+      display: none;
+    }
+    @include breakpoint(small down) {
+      justify-self: center;
+    }
+  }
   a {
     color: $gray80;
     &:hover,

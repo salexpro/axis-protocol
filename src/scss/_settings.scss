@@ -88,7 +88,7 @@ $gray100: #1a1f21;
 // ---------
 
 $global-font-size: 18px;
-$global-width: rem-calc(1440);
+$global-width: rem-calc(1360);
 $global-lineheight: 1.25;
 $foundation-palette: (
   primary: $brand70,
@@ -142,7 +142,7 @@ $breakpoints-hidpi: (
   hidpi-3: 3,
 );
 $print-breakpoint: large;
-$breakpoint-classes: (small medium large);
+$breakpoint-classes: (small medium large xlarge);
 
 // 3. The Grid
 // -----------
@@ -170,13 +170,18 @@ $header-margin-bottom: 30px;
 $header-styles: (
   small: (
     'h1': (
-      'fs': 24,
+      'fs': 32,
+      lh: 1.5,
+      mb: 18,
     ),
     'h2': (
-      'fs': 20,
+      'fs': 24,
+      lh: 1.17,
+      mb: 25,
     ),
     'h3': (
-      'fs': 19,
+      'fs': 18,
+      mb: 11,
     ),
     'h4': (
       'fs': 18,
@@ -907,8 +912,8 @@ $grid-margin-gutters: (
 );
 $grid-padding-gutters: $grid-margin-gutters;
 $grid-container-padding: (
-  small: 20px,
-  medium: 160px,
+  small: 40px,
+  medium: 80px,
 );
 $grid-container-max: $global-width;
 $xy-block-grid-max: 8;

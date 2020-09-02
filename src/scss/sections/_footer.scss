@@ -1,15 +1,52 @@
 .footer {
   margin-top: 48px;
-  display: flex;
+  display: grid;
   align-items: center;
   padding-top: 30px;
   padding-bottom: 80px;
+  grid-template-areas: 'social menu copy powered';
+  grid-template-columns: repeat(2, auto) 1fr auto;
+  grid-column-gap: 40px;
+  @include breakpoint(large down) {
+    font-size: 17px;
+    grid-column-gap: 24px;
+  }
+  @include breakpoint(medium down) {
+    padding-bottom: 96px;
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas:
+      'social menu menu'
+      'copy copy powered';
+    justify-content: space-between;
+    grid-row-gap: 26px;
+  }
+  @include breakpoint(small down) {
+    margin-top: 32px;
+    padding-top: 32px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas:
+      'social social'
+      'menu menu'
+      'copy powered';
+    font-size: 14px;
+    grid-gap: 25px 10px;
+    line-height: 1.43;
+    padding-bottom: 60px;
+  }
   &_copyright {
+    grid-area: copy;
     color: $gray60;
-    margin: 0 40px 0 auto;
+    justify-self: end;
+    @include breakpoint(medium down) {
+      justify-self: start;
+    }
   }
   &_powered {
+    grid-area: powered;
     text-decoration: underline;
     color: $gray80;
+    @include breakpoint(medium down) {
+      justify-self: end;
+    }
   }
 }

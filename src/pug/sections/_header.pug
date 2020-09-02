@@ -2,7 +2,39 @@ header.header
   .grid-container.header_inner
     .header_logo
       img(src='./assets/img/logo.svg', alt='Protocol by Axis')
-    +menu
+    +menu.menu--header
     .header_actions
       a.button.clear(href='#')
         | Early access
+
+    +social.social--header
+
+    button.header_hamb
+      svg(
+        width='36',
+        height='36',
+        viewBox='0 0 36 36',
+        fill='currentColor',
+        xmlns='http://www.w3.org/2000/svg'
+      )
+        rect.header_hamb_line.header_hamb_line-middle(
+          x='4',
+          y='16',
+          width='28',
+          height='3',
+          rx='1.5'
+        )
+        rect.header_hamb_line.header_hamb_line-top(
+          x='10',
+          y='8',
+          width='22',
+          height='3',
+          rx='1.5'
+        )
+        rect.header_hamb_line.header_hamb_line-bottom(
+          x='12',
+          y='24',
+          width='20',
+          height='3',
+          rx='1.5'
+        )

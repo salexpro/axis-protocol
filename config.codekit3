@@ -45,9 +45,9 @@
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "/docs/.prettierignore",
-		"oF": 0
+		"oF": 1
 		},
 	"/babel.config.js": {
 		"bF": 4,
@@ -59,12 +59,6 @@
 		"oF": 1,
 		"sC": 3,
 		"tS": 1
-		},
-	"/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/docs/build",
-		"oF": 0
 		},
 	"/build.zip": {
 		"cB": 0,
@@ -88,11 +82,52 @@
 		"oAP": "/docs/docs",
 		"oF": 0
 		},
+	"/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/docs/favicon.ico",
+		"oF": 0
+		},
 	"/node_modules": {
 		"ft": 65536,
 		"oA": 1,
 		"oAP": "/docs/node_modules",
 		"oF": 0
+		},
+	"/node_modules/gsap/CSSPlugin.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/docs/node_modules/gsap/CSSPlugin.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/gsap/gsap-core.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/docs/node_modules/gsap/gsap-core.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/gsap/index.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/docs/node_modules/gsap/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
 		},
 	"/node_modules/jquery/dist/jquery.js": {
 		"bF": 4,
@@ -148,13 +183,141 @@
 		"oAP": "/docs/robots.txt",
 		"oF": 0
 		},
-	"/src/assets/favicon/.gitkeep": {
+	"/src/assets/favicon/android-chrome-192x192.png": {
+		"ft": 32768,
+		"iS": 2698,
+		"oA": 0,
+		"oAP": "/docs/assets/favicon/android-chrome-192x192.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/android-chrome-512x512.png": {
+		"ft": 32768,
+		"iS": 6183,
+		"oA": 0,
+		"oAP": "/docs/assets/favicon/android-chrome-512x512.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 2557,
+		"oA": 0,
+		"oAP": "/docs/assets/favicon/apple-touch-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/browserconfig.xml": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 1,
-		"oAP": "/docs/assets/favicon/.gitkeep",
-		"oF": 1
+		"oA": 2,
+		"oAP": "/docs/assets/favicon/browserconfig.xml",
+		"oF": 0
+		},
+	"/src/assets/favicon/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 511,
+		"oA": 0,
+		"oAP": "/docs/assets/favicon/favicon-16x16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 757,
+		"oA": 0,
+		"oAP": "/docs/assets/favicon/favicon-32x32.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/mstile-144x144.png": {
+		"ft": 32768,
+		"iS": 1815,
+		"oA": 0,
+		"oAP": "/docs/assets/favicon/mstile-144x144.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/mstile-150x150.png": {
+		"ft": 32768,
+		"iS": 1696,
+		"oA": 0,
+		"oAP": "/docs/assets/favicon/mstile-150x150.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/mstile-310x150.png": {
+		"ft": 32768,
+		"iS": 1719,
+		"oA": 0,
+		"oAP": "/docs/assets/favicon/mstile-310x150.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/mstile-310x310.png": {
+		"ft": 32768,
+		"iS": 3211,
+		"oA": 0,
+		"oAP": "/docs/assets/favicon/mstile-310x310.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/mstile-70x70.png": {
+		"ft": 32768,
+		"iS": 1315,
+		"oA": 0,
+		"oAP": "/docs/assets/favicon/mstile-70x70.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/safari-pinned-tab.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 0,
+		"oAP": "/docs/assets/favicon/safari-pinned-tab.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 65566970740735,
+		"prP": 0
+		},
+	"/src/assets/favicon/site.webmanifest": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/docs/assets/favicon/site.webmanifest",
+		"oF": 0
 		},
 	"/src/assets/fonts/Agenor-Light.woff": {
 		"cB": 0,
@@ -188,6 +351,16 @@
 		"oAP": "/docs/assets/fonts/Agenor-Regular.woff2",
 		"oF": 0
 		},
+	"/src/assets/img/ecosystem.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 0,
+		"oAP": "/docs/assets/img/ecosystem.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 65584150609919,
+		"prP": 0
+		},
 	"/src/assets/img/hero.svg": {
 		"ft": 2097152,
 		"miP": 1,
@@ -208,6 +381,16 @@
 		"plM": 69982180343807,
 		"prP": 0
 		},
+	"/src/assets/img/join.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 0,
+		"oAP": "/docs/assets/img/join.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 65584150609919,
+		"prP": 0
+		},
 	"/src/assets/img/logo.svg": {
 		"ft": 2097152,
 		"miP": 1,
@@ -217,6 +400,17 @@
 		"opt": 1,
 		"plM": 65566970740735,
 		"prP": 0
+		},
+	"/src/assets/img/og-image.png": {
+		"ft": 32768,
+		"iS": 80973,
+		"oA": 0,
+		"oAP": "/docs/assets/img/og-image.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"/src/js/app.js": {
 		"bF": 4,
@@ -643,9 +837,9 @@
 	"creationDate": 505831586,
 	"displayValue": "Axis Protocol",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-doge",
+	"iconImageName": "/src/assets/favicon/android-chrome-512x512.png",
 	"iconImageWasSetByUser": 1,
-	"lastBuiltDate": 620528875.14283705
+	"lastBuiltDate": 620748203.18285
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

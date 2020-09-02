@@ -1,6 +1,6 @@
 section.grid-container.join
-  .grid-x.grid-margin-x.large-up-2
-    .cell.join_content
+  .grid-x.grid-margin-x.join_inner
+    .cell.xlarge-6.large-7.join_content
       h2.h1
         | Join for
         br
@@ -12,9 +12,5 @@ section.grid-container.join
         input(type='email', placeholder='Your Email', required)
         button.button
           | Request access
-    .cell
-      img(
-        srcset=`https://picsum.photos/1240/720 2x, https://picsum.photos/620/360 1x`,
-        src=`https://picsum.photos/620/360`,
-        alt='Join'
-      )
+    .cell.xlarge-6.large-5
+      img(src='./assets/img/join.svg', alt='Join')
